@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Smooth scrolling effect when clicking nav links */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-dark: #1a1e23;
+    --card-dark: #222831;
+    --accent-green: #00c896;
+    --accent-yellow: #ffbe3b;
+    --text-light: #e0e6ed;
+    --text-muted: #a0aec0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Header Navigation */
+header {
+    background-color: #111418;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #2d343f;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-green);
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    min-height: calc(100vh - 70px); /* Centers hero content vertically */
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.hero-content h1 span {
+    color: var(--accent-green);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+}
+
+.cta-btn {
+    background-color: var(--accent-green);
+    color: #111418;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #00b386;
+    transform: translateY(-2px);
+}
+
+.hero-image-mock {
+    flex: 1;
+    background-color: var(--card-dark);
+    height: 350px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #393e46;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    object-fit: cover; /* Keeps image sharp and fitting correctly */
+}
+
+.mock-graphic {
+    font-size: 5rem;
+    color: var(--accent-yellow);
+}
+
+/* Features Section */
+.features {
+    background-color: #111418;
+    padding: 6rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.section-title span {
+    color: var(--accent-yellow);
+}
+
+.grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.feature-card {
+    background-color: var(--card-dark);
+    padding: 2.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    border-top: 4px solid var(--accent-green);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 6rem 2rem;
+    background-color: var(--bg-dark);
+}
+
+.pricing-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.pricing-card {
+    background-color: var(--card-dark);
+    padding: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #2d343f;
+}
+
+.pricing-card.premium {
+    border: 2px solid var(--accent-green);
+    position: relative;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.price span {
+    color: var(--accent-green);
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.pricing-features li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #111418;
+    padding: 6rem 2rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--card-dark);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--bg-dark);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-green);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: var(--accent-green);
+    color: #111418;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #00b386;
+}
+
+.contact-info-container {
+    max-width: 500px;
+    margin: 1.5rem auto 0 auto;
+    text-align: left;
+}
+
+.contact-info-container p {
+    margin-bottom: 0.75rem;
+}
+
+.contact-info-container i {
+    margin-right: 0.5rem;
+    color: var(--accent-green);
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--bg-dark);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 1px solid #2d343f;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+}

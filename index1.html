@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arihant jain_level 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="#home" class="logo">arihant jain.com</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>web development and design <span> smart classes .</span></h1>
+                <p>Generate unique web development slogans instantly using our AI slogan generator. Describe your business idea and discover creative tagline ideas for your brand.</p>
+                <a href="#contact" class="cta-btn">Get Started Free</a>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3f-c6MelhVaJ-rHaS1du4tAZl-OyWPaAetQ&s" alt="Hero Image" class="hero-image-mock">
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title"> why the web development and designing is important ? </h2>
+            <div class="grid-container">
+                <div class="feature-card">
+                    <h3>It Shapes the First Impression</h3>
+                    <p>When potential customers visit your site, it takes them mere seconds to form an opinion about your business. A modern, clean, and visually appealing design builds instant trust. Conversely, an outdated or chaotic site makes your business look unprofessional and unreliable.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>It Drives User Experience (UX) and Navigation</h3>
+                    <p>A beautifully designed website is useless if people can’t figure out how to use it. Good web development ensures the site loads fast, links work, and the layout is intuitive. When users can effortlessly find the information they need, they stay longer and are far more likely to convert into customers.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>It Boosts Search Engine Optimization (SEO)</h3>
+                    <p>Web design and development aren't just about what the user sees; they also include how the backend is built. Search engines like Google crawl your site's code. Clean coding, mobile responsiveness, fast loading speeds, and proper heading structures are critical development factors that help your site rank higher in search results.</p>
+                </div>
+
+                 <div class="feature-card">
+                    <h3>It Ensures Mobile Responsiveness</h3>
+                    <p>More than half of all global web traffic comes from mobile devices. Professional web development guarantees that your site automatically adapts to any screen size—whether it's a smartphone, tablet, or desktop. If your site looks broken on a phone, you are actively losing a massive chunk of your audience.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>It Establishes Brand Consistency</h3>
+                    <p>Your website is the hub of your digital identity. Consistent use of logos, fonts, colors, and messaging across your site builds brand recognition. Good design standardizes these elements so that your business looks cohesive, memorable, and authoritative across the entire internet.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>It Converts Visitors into Customers</h3>
+                    <p>Ultimately, a website is a business tool meant to drive actions—whether that's buying a product, signing up for a newsletter, or booking a call. Strategic web design places Calls to Action (CTAs) like "Buy Now" or "Contact Us" in high-visibility areas, while seamless development ensures the checkout or signup process is completely glitch-free.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2 class="section-title">Upgrade account to PRO </h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>1 month </h3>
+                    <div class="price">$10<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li>It Shapes the First Impression</li>
+                        <li>It Drives User Experience (UX) and Navigation</li>
+                        <li>It Boosts Search Engine Optimization (SEO)</li>
+                    </ul>
+                    <a href="#contact" class="cta-btn" style="background: transparent; border: 2px solid var(--accent-green); color: var(--accent-green);">Join now </a>
+                </div>
+                <div class="pricing-card premium">
+                    <h3>1 year</h3>
+                    <div class="price">$1520<span>/year</span></div>
+                    <ul class="pricing-features">
+                        <li>All Premium Layouts</li>
+                        <li>Advanced Flex Controls</li>
+                        <li>24/7 Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="cta-btn">Go Pro</a>
+                </div>
+
+                <div class="pricing-card premium">
+                    <h3> 7 days free access </h3>
+                    <div class="price">$0<span>/ days</span></div>
+                    <ul class="pricing-features">
+                        <li>Access to ChatGPT 5.5, ChatGPT 5.4</li>
+                        <li>Web search instant web scanning & live web intelligence</li>
+                        <li>24/7 Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="cta-btn"> Join free </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">GO to <span>Sign up</span></h2>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <section id="contact-info" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-info-container">
+            <p><i class="fas fa-envelope"></i> arihantjain2025@rietjaipur.ac.in</p>
+            <p><i class="fab fa-linkedin"></i> arihant-gokhroo linkedin.com </p>
+            <p><i class="fab fa-github"></i>  arihantjain2025 github.com </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 arihant jain.com. Created as part of Web Development Training Level 1.</p>
+    </footer>
+
+</body>
+</html>
